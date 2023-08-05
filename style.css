@@ -1,0 +1,737 @@
+:root {
+--Blue: hsl(246, 80%, 60%);
+
+--Lightred-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-self: hsl(43, 84%, 65%);
+
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+
+--border-radius: 15px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+    max-width: 1440px;
+    max-height: 100vh;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 70%;
+    /* max-width: fit-content; */
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
+    grid-template-rows: 420px;
+}
+
+.activities {
+    display: grid;
+    row-gap: 20px;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    grid-template-rows: 200px;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    grid-template-rows: 200px;
+}
+
+.info_card {
+    width: 100%;
+    height: 420px;
+    border-radius: var(--border-radius);
+    background-color: var(--Dark-blue);
+}
+
+.profile {
+    width: 100%;
+    height: 250px;
+    border-radius: var(--border-radius);
+    padding: 20px 20px 40px 20px;
+    background-color: var(--Blue);
+}
+
+.profile img {
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+
+h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+}
+
+#linkBtn {
+    position: relative;
+    top: 125px;
+}
+
+button {
+    border: none;
+    display: block;
+    font-size: 14px;
+    margin: 15px 0;
+    color: var(--Desaturated-blue);
+    background-color: var(--Dark-blue);
+}
+
+button:hover {
+    color: white;
+ }
+
+button:active {
+    cursor:pointer;
+ }
+
+.report {
+    position: relative;
+    top: 30px;
+    font-size: 14px;
+    color: var(--Pale-Blue);
+}
+
+.work_card:hover {
+    background-color: var(--Desaturated-blue);
+}
+
+.play_card:hover {
+    background-color: var(--Desaturated-blue);
+}
+
+.study_card:hover {
+    background-color: var(--Desaturated-blue);
+}
+
+.exercise_card:hover {
+    background-color: var(--Desaturated-blue);
+}
+
+.social_card:hover {
+    background-color: var(--Desaturated-blue);
+}
+
+.self_card:hover {
+    background-color: var(--Desaturated-blue);
+}
+
+.work_container {
+    /* width: 200px; */
+    /* height: 190px; */
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.work_card {
+    position: relative;
+    top: 35px;
+    width: 103%;
+    height: 165px;
+    border-radius: 15px;
+    background-color: var(--Dark-blue);
+}
+
+.work_card .ellipsis {
+    position: relative;
+    left: 80%;
+    top: 15px;
+}
+
+.work_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.work_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.work_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.play_container {
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: var(--Soft-blue-play);
+}
+
+.play_card {
+    position: relative;
+    top: 35px;
+    width: 103%;
+    height: 165px;
+    border-radius: 15px;
+    background-color: var(--Dark-blue);
+}
+
+.play_card .ellipsis {
+    position: relative;
+    left: 80%;
+    top: 15px;
+}
+
+.play_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.play_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.play_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.study_container {
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: var(--Light-red-study);
+}
+
+.study_card {
+    position: relative;
+    top: 35px;
+    width: 103%;
+    height: 165px;
+    border-radius: 15px;
+    background-color: var(--Dark-blue);
+}
+
+.study_card .ellipsis {
+    position: relative;
+    left: 80%;
+    top: 15px;
+}
+
+.study_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.study_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.study_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.exercise_container {
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: var(--Lime-green-exercise);
+}
+
+.exercise_card {
+    position: relative;
+    top: 35px;
+    width: 103%;
+    height: 165px;
+    border-radius: 15px;
+    background-color: var(--Dark-blue);
+}
+
+.exercise_card .ellipsis {
+    position: relative;
+    left: 80%;
+    top: 15px;
+}
+
+.exercise_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.exercise_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.exercise_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.social_container {
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: var(--Violet-social);
+}
+
+.social_card {
+    position: relative;
+    top: 35px;
+    width: 103%;
+    height: 165px;
+    border-radius: 15px;
+    background-color: var(--Dark-blue);
+}
+
+.social_card .ellipsis {
+    position: relative;
+    left: 80%;
+    top: 15px;
+}
+
+.social_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.social_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.social_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.self_container {
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: var(--Soft-orange-self);
+}
+
+.self_card {
+    position: relative;
+    top: 35px;
+    width: 103%;
+    height: 165px;
+    border-radius: 15px;
+    background-color: var(--Dark-blue);
+}
+
+.self_card .ellipsis {
+    position: relative;
+    left: 80%;
+    top: 15px;
+}
+
+.self_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.self_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.self_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+@media (max-width: 375px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        overflow-y: scroll;
+    }
+
+    .container {
+        max-width: 350px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        column-gap: 0;
+        row-gap: 20px;
+        grid-template-rows: minmax(100px, auto);
+    }
+
+    .info_card {
+        height: 290px;
+    }
+
+    .profile {
+        height: 200px;
+    }
+
+    .activities {
+        display: grid;
+        row-gap: 0;
+    }
+
+    button {
+        display: inline;
+        margin: 0 55px 0 10px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .month {
+        margin-right: 0;
+    }
+
+    .report {
+        position: relative;
+        top: -9px;
+        left: 95px;
+    }
+
+    h2 {
+        position: relative;
+        top: 0px;
+        left: 95px;
+    }
+
+    .profile img {
+        position: relative;
+        top: 50px;
+        transform: scale(1.5);
+        margin: 0px 5px 0px 15px;
+    }
+
+    .section1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 20px;
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        
+    }
+
+    .work_container {
+        width: 350px;
+        height: 165px;
+    }
+
+    .work_card {
+        width: 350px;
+        height: 130px;
+    }
+
+    .work_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .work_card h4 {
+        margin-left: 16px;
+    }
+
+    .work_card .time {
+        margin-left: 16px;
+    }
+
+    .work_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    }
+
+    .play_container {
+        position: relative;
+        bottom: 34px;
+        width: 350px;
+        height: 165px;
+    }
+
+    .play_card {
+        width: 350px;
+        height: 130px;
+    }
+
+    .play_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .play_card h4 {
+        margin-left: 16px;
+    }
+
+    .play_card .time {
+        margin-left: 16px;
+    }
+
+    .play_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    }
+
+    .study_container {
+        position: relative;
+        bottom: 34px;
+        width: 350px;
+        height: 165px;
+    }
+
+    .study_card {
+        width: 350px;
+        height: 130px;
+    } 
+
+    .study_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .study_card h4 {
+        margin-left: 16px;
+    }
+
+    .study_card .time {
+        margin-left: 16px;
+    }
+
+    .study_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    }
+
+    .exercise_container {
+        position: relative;
+        bottom: 12px;
+        width: 350px;
+        height: 165px;
+    }
+
+    .exercise_card {
+        width: 350px;
+        height: 130px;
+    }
+
+    .exercise_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .exercise_card h4 {
+        margin-left: 16px;
+    }
+
+    .exercise_card .time {
+        margin-left: 16px;
+    }
+
+    .exercise_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    } 
+
+    .social_container {
+        position: relative;
+        bottom: 25px;
+        width: 350px;
+        height: 165px;
+    }
+
+    .social_card {
+        width: 350px;
+        height: 130px;
+    }
+
+    .social_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .social_card h4 {
+        margin-left: 16px;
+    }
+
+    .social_card .time {
+        margin-left: 16px;
+    }
+
+    .social_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    } 
+
+    .self_container {
+        position: relative;
+        bottom: 1px;
+        width: 350px;
+        height: 165px;
+    }
+
+    .self_card {
+        width: 350px;
+        height: 130px;
+    }
+
+    .self_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .self_card h4 {
+        margin-left: 16px;
+    }
+
+    .self_card .time {
+        margin-left: 16px;
+    }
+
+    .self_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    } 
+}
